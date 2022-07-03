@@ -9,8 +9,10 @@ var denpm = function(name){
   return name;
 };
 
+console.log(__dirname + "/package.json!npm", 'bug')
+
 stealExport({
-  system: {
+  steal: {
     config: __dirname + "/package.json!npm",
     main: ["fs-web", "fs-web/global"]
   },
